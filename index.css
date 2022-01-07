@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: black;
+  background-image: url("./vurilo.png");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-content: space-between;
+  width: 100vw;
+  height: 70vh;
+  margin-left: 10rem;
+}
+.wrapper > h1 {
+  margin-bottom: 8rem;
+  font-size: 3rem;
+}
+.fireworks-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.fireworks-container:nth-of-type(2) {
+  z-index: 9;
+}
+.countdown {
+  display: flex;
+  gap: 2rem;
+  font-family: "Londrina Solid", cursive;
+  color: rgb(255, 255, 255);
+  /* filter: drop-shadow(-0.05em -0.05em 0.05em rgba(12, 0, 12, 10))
+    drop-shadow(0.02em 0.02em 0em rgba(0, 0, 0, 1))
+    drop-shadow(0 0 0.5em rgba(255, 192, 203, 0.5)); */
+}
+.countdown div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.countdown div .value {
+  font-size: 10em;
+
+  font-weight: 400;
+  /* text-shadow: 0 0 0.05em red, 0 0 0.1em black; */
+}
+.seperater {
+  margin-top: -0.5em;
+  font-size: 10em;
+}
+
+.countdown div . {
+  font-size: 5em;
+  font-weight: 300;
+  background: rgba(255, 192, 203, 1);
+  color: rgb(18, 54, 70);
+}
+.label {
+  font-size: 2em;
+}
+
+.countdown div .yeardigit {
+  font-size: 8em;
+  line-height: 0.9em;
+  font-weight: 900;
+  /* text-shadow: 0 0 0.02em red, 0 0 0.05em black; */
+}
